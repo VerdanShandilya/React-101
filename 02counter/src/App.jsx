@@ -5,9 +5,22 @@ import './App.css'
 
 function App() {
 
-  let [value,setvalue]=useState(0);
+  let [value,setvalue]=useState(15);
   const addvalue = () =>{
     setvalue(value+1);
+    // setvalue(value+1);
+    // setvalue(value+1);
+    // setvalue(value+1);
+    setvalue((prevvalue)=>{
+      return prevvalue+1
+    })
+    setvalue((prevvalue)=>{
+       return prevvalue+1
+    })
+    setvalue((prevvalue)=>{
+      return  prevvalue+1
+    })
+
   }
   const removevalue= () =>{
     if(value>0)
@@ -19,7 +32,7 @@ function App() {
       <h2>
         Counter val:{value}
       </h2>
-<button onClick={addvalue}>increase value</button>
+      <button onClick={addvalue}>increase value</button>
       <br/>
       <button onClick={removevalue}>decrease value</button>
     </>
