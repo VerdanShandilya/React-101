@@ -47,7 +47,8 @@ const {onSent,recentprompt,result,loading,resultdata,settext,text}=useContext(Co
                 </div>
                 <div className="result-data">
                     <img src={assets.gemini_icon} alt=""/>
-                    <p dangerouslySetInnerHTML={{__html:resultdata}}></p>
+                    {loading ? <p>Loading...</p> :
+                    <p dangerouslySetInnerHTML={{__html:resultdata}}></p>}
                 </div>
             </div>
             }
