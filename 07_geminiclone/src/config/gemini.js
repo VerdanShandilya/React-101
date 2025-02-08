@@ -1,4 +1,4 @@
-// // const apikey ="AIzaSyAeojIgVBz--mDyQtihEEcZJx4rb8kL2-s"
+
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
