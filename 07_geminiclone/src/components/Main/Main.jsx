@@ -18,7 +18,7 @@ const {onSent,recentprompt,result,loading,resultdata,settext,text}=useContext(Co
             <>
             <div className="greet">
                 <p><span>Hello, Verdan</span></p>
-                <p>How can ihelp you today?</p>
+                <p>How can i help you today?</p>
             </div>
             <div className="cards">
                 <div className="card">
